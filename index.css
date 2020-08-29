@@ -1,0 +1,85 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#game-container {
+  margin: 10px 10px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 3em;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 2.5em;
+  color: aqua;
+}
+
+.hide {
+  display: none;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.entry {
+  height: 15%;
+  padding: 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.options {
+  height: 7%;
+  padding: 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1% 0;
+}
+
+.btn {
+  width: 7em;
+}
+
+#message {
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 3rem;
+  color: #232931;
+}
+
+@media (max-width: 900px) {
+  .entry {
+    flex-direction: column;
+    padding: 0 10%;
+  }
+  .options {
+    height: 25%;
+    flex-direction: column;
+  }
+  .center {
+    margin-right: 2%;
+  }
+}

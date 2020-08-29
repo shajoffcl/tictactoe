@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="entry">
+      <div>
+        Player 1:
+        <input
+          class="border border-primary rounded"
+          type="text"
+          id="p1"
+          name="p1"
+        />
+      </div>
+      <div>
+        Player 2:
+        <input
+          class="border border-primary rounded"
+          type="text"
+          id="p2"
+          name="p2"
+        />
+      </div>
+    </div>
+
+    <div class="options">
+      <div>
+        Choose Dimension :
+        <select name="dimension" id="dimension"></select>
+      </div>
+      <div>
+        <button class="btn btn-info" id="game-start" onclick="startGame()">
+          Start
+        </button>
+
+        <button class="btn btn-info hide" id="reset">Reset</button>
+      </div>
+    </div>
+    <div class="center">
+      <div id="game-container" class="center hide"></div>
+      <p id="message"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
