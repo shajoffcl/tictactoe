@@ -25,6 +25,8 @@ const startGame=()=>{
 
     let hide=document.getElementById("game-container");
     hide.classList.remove("hide");
+    let detail=document.getElementById("detail");
+    detail.classList.add("hide");
 
     players.push(player1);
     players.push(player2);
@@ -47,18 +49,22 @@ const addIcon=(el)=>{
     el.innerHTML = board[i][j];
 
     if (calculateWinner()) {
-        alert(players[turn % 2] + " won");
-        gameOver = true;
-        return;
+      let box=document.getElementById("game-container");
+      box.classList.add("hide");
+      document.getElementById("result").innerHTML=players[turn % 2] + " won";
+      gameOver = true;
+      return;
     }
     turn++;
 
     document.getElementById("turn").innerHTML = players[turn % 2] + "'s turn";
 
     if (turn === 9) {
-        alert("Game is drawn!");
-        gameOver = true;
-        return;
+      let box=document.getElementById("game-container");
+      box.classList.add("hide");
+      document.getElementById("result").innerHTML="Game Drawn!";
+      gameOver = true;
+      return;
     }
 };
 
